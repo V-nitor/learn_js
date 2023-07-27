@@ -37,6 +37,7 @@ let object= {
 // Info= "Just the: ';' mean this value exist but for the moment useless" at the bottom
 let EmptyBox;
 
+
 // **** Recap on operator in IT ****
 console.log(7 + 5);
 console.log(7 - 5);
@@ -44,6 +45,7 @@ console.log(7 * 5);
 console.log(7 / 5);
 // Info= ** is [?] to the power of [?]
 console.log(7 ** 5);
+
 
 // **** Operator plus ****
 var total= 0;
@@ -56,6 +58,7 @@ total += 8;
 total *= 6;
 const AnswerTotal= "Let's see the real total: '" + total + "'";
 console.log(AnswerTotal);
+
 
 // **** Control ****
 let x= 1;
@@ -82,9 +85,47 @@ if (x === y) {
     console.log("Tie!")
 }
 
+var a=0
+var b="0"
+
 // Warning= To test the equality WITH THE VALUE WITHOUT TAKE TYPE INTO CONSIDERATION, we used '==' at the bottom
-if (x == y) {
-    console.log("x and y have equal (ONLY in value)")
+if (a == b) {
+    console.log("a and b have equal (ONLY in value)")
 } else {
-    console.log("x and y haven't equal (ONLY in value)")
+    console.log("a and b haven't equal (ONLY in value)")
 }
+
+// Info= In JavaScript, "||" mean "or" (this condition or this one) at the bottom
+if (x < y || x > -10) {
+    console.log("x is Accepted")
+}
+
+// Info= In JavaScript, "&&" mean "and" (obviously, every elements must be okay) at the bottom
+if (x == y && x === 1 ) {
+    console.log("x is THE NIMBER ONE!")
+} else {
+    console.log("x is NOBODY!")
+}
+
+
+// **** Function ****
+
+// Note= "The (old) function is in reality an algorithm from many roles" at the bottom
+function ToDoSth() {
+    console.log(".I am a function, and i will answer 2²:");
+    console.log(2 ** 2);
+    console.log(".So? What do you think?");
+}
+
+// Warning= The function isn't a variable!! So, always made it before or after the function. Like at the bottom
+ToDoSth();
+
+// Note= This method at the method it's called (modern) function
+// Note= Inside parenthes it's called "parameter". For our exemple, "e" & "f" are at the begin unknown data
+const LetsGo = (e, f) => {
+    console.log(e * f);
+}
+// Note= The variables can be inside a function. And futhermore, it's better like that because we know it will be useful ONLY in this UNIQUE function!
+
+// Note= Now, "e" & "f" are exact data here at the bottom
+LetsGo(8, 3);
